@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mycome0">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -22,10 +22,8 @@
         <activity android:name=".SetActivity" />
         <activity android:name=".Message1Activity" />
         <activity android:name=".Message2Activity" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main" />
-        <activity android:name=".fragment.Con1Activity"></activity>
+        <activity android:name=".fragment.Con1Activity" />
+        <activity android:name=".LWActivity"></activity>
     </application>
 
 </manifest>

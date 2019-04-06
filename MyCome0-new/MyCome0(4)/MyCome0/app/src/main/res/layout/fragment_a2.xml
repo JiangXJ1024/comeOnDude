@@ -12,8 +12,8 @@
             android:gravity="center"
             android:layout_centerHorizontal="true"
             android:text="------记录中------"
-            android:textSize="25sp"
-            />
+            android:textSize="25dp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/Text1"
@@ -125,15 +125,9 @@
             android:gravity="center"
             android:text="活动开始时间："
             android:textSize="15dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/lin3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lin2">
         <Spinner
             android:id="@+id/spinner1"
-            android:layout_width="80dp"
+            android:layout_width="130dp"
             android:layout_height="40dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -143,7 +137,7 @@
             android:textSize="15dp"/>
         <Spinner
             android:id="@+id/spinner2"
-            android:layout_width="60dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -151,9 +145,17 @@
             android:gravity="center"
             android:text="月"
             android:textSize="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin2">
+
+
         <Spinner
             android:id="@+id/spinner3"
-            android:layout_width="60dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -163,7 +165,7 @@
             android:textSize="15dp"/>
         <Spinner
             android:id="@+id/spinner4"
-            android:layout_width="60dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -173,7 +175,7 @@
             android:textSize="15dp"/>
         <Spinner
             android:id="@+id/spinner5"
-            android:layout_width="60dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -193,15 +195,9 @@
             android:gravity="center"
             android:text="接单截止时间："
             android:textSize="15dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/lin5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lin4">
         <Spinner
             android:id="@+id/spinner6"
-            android:layout_width="80dp"
+            android:layout_width="130dp"
             android:layout_height="40dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -211,7 +207,7 @@
             android:textSize="15dp"/>
         <Spinner
             android:id="@+id/spinner7"
-            android:layout_width="60dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -219,9 +215,16 @@
             android:gravity="center"
             android:text="月"
             android:textSize="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin4">
+
         <Spinner
             android:id="@+id/spinner8"
-            android:layout_width="60dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -231,7 +234,7 @@
             android:textSize="15dp"/>
         <Spinner
             android:id="@+id/spinner9"
-            android:layout_width="60dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -241,7 +244,7 @@
             android:textSize="15dp"/>
         <Spinner
             android:id="@+id/spinner10"
-            android:layout_width="60dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"/>
         <TextView
             android:layout_width="wrap_content"

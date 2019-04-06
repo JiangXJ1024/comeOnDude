@@ -72,22 +72,14 @@
                 android:background="@drawable/bg_radio_1"
                 android:textSize="16sp" />
         </RadioGroup>
-
-
-
-
-
-
-
     </RelativeLayout>
 
     <ListView
         android:id="@+id/List1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
 
     </ListView>
-
-
 
 </LinearLayout>

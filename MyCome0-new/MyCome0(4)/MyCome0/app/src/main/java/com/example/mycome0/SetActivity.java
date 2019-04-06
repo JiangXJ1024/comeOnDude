@@ -21,7 +21,7 @@ public class SetActivity extends AppCompatActivity {
     public void Click4(View view) {//保存设置的个人信息，然后返回登录页面
         //提示信息已成功保存
 
-        //返回登录首页面
+        //如果未登录返回登录首页面
         Intent intent =new Intent(SetActivity.this,LoginActivity.class);
         startActivity(intent);
     }
