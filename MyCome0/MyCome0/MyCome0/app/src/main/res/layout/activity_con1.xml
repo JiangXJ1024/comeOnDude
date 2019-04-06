@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Con1Activity"
+    >
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Lin1">
+
+    </FrameLayout>
+
+<LinearLayout
+    android:id="@+id/Lin1"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true" >
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:text="广场"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:onClick="Click9"
+        />
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="发布"
+        android:textSize="18dp"
+        android:onClick="Click10"
+        android:gravity="center"
+        android:layout_toRightOf="@id/Text1"/>
+    <TextView
+        android:id="@+id/Text3"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:text="消息"
+        android:textSize="18dp"
+        android:onClick="Click11"
+        android:gravity="center"
+        android:layout_toRightOf="@id/Text2"/>
+</LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

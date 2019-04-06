@@ -53,7 +53,7 @@ public class NewActivity extends AppCompatActivity {
     }
 
     public void RegisterRequest(//信息验证，身份正确且未注册过则跳转
-            final String College, final String No, final String Name, final String IdNumber) {
+                                final String College, final String No, final String Name, final String IdNumber) {
         //请求地址
         String url = "http://192.168.43.129:8080/WebApplication1/RegisterServlet";    //注①
         String tag = "Register";    //注②

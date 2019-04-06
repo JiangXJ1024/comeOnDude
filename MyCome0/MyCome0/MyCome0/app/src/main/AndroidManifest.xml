@@ -23,9 +23,8 @@
         <activity android:name=".SetActivity" />
         <activity android:name=".Message1Activity" />
         <activity android:name=".Message2Activity" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"></activity>
+        <activity android:name=".fragment.Con1Activity" />
+        <activity android:name=".LWActivity"></activity>
     </application>
 
 </manifest>

@@ -181,7 +181,7 @@ public class SetActivity extends AppCompatActivity {
 
     }
 
-    public void RegisterRequest(//信息验证，身份正确且未注册过则跳转
+    public void RRegisterRequest(//信息验证，身份正确且未注册过则跳转
                                 final String college, final String photo, final String no, final String name, final String sex, final String grade,
                                 final String major, final String userName, final String passWord, final String information) {
         //请求地址
@@ -215,7 +215,7 @@ public class SetActivity extends AppCompatActivity {
                                         "注册成功success", Toast.LENGTH_SHORT).show();
                                 //利用Intent进行不同Activity（页面）之间的数据传送
                                 Intent intent = new Intent();
-                                intent.setClass(getApplicationContext(), MainActivity.class);
+                                intent.setClass(getApplicationContext(),LoginActivity.class);
                                 startActivity(intent);
                                 finish();
                             } else {
@@ -281,6 +281,6 @@ public class SetActivity extends AppCompatActivity {
         String Major = major.getText().toString().trim();
 
         //返回登录首页面
-        RegisterRequest(College, Photo,No,Name,Sex,Grade,Major,UserName,PassWord,Information);
+        RRegisterRequest(College, Photo,No,Name,Sex,Grade,Major,UserName,PassWord,Information);
     }
 }

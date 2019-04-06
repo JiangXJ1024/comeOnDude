@@ -21,6 +21,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.mycome0.fragment.Con1Activity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -90,7 +91,7 @@ public class LoginActivity extends AppCompatActivity {
                                         "success", Toast.LENGTH_SHORT).show();
                                 //利用Intent进行不同Activity（页面）之间的数据传送
                                 Intent intent = new Intent();
-                                intent.setClass(getApplicationContext(), MainActivity.class);
+                                intent.setClass(getApplicationContext(), Con1Activity.class);
 //                                ((MyApplication)MainActivity.this.getApplicationContext()).user.initUser(
 //                                        jsonObject.getString("Sex"),
 //                                        jsonObject.getString("Nation"),

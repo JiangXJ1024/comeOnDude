@@ -25,6 +25,8 @@ android:fadingEdge="vertical">
         android:textStyle="bold"
         android:typeface="sans" />
 
+
+
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
@@ -137,7 +139,7 @@ android:fadingEdge="vertical">
         android:textSize="17dp" />
     <TextView
         android:id="@+id/EditText4"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="30dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="10dp"
@@ -152,7 +154,9 @@ android:fadingEdge="vertical">
         android:layout_height="30dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
-        android:layout_toRightOf="@id/EditText4" />
+        android:layout_toRightOf="@id/EditText4"
+        android:textOff="仅自己可见"
+        android:textOn="所有人可见" />
 
     <TextView
         android:id="@+id/textView7"
@@ -181,7 +185,9 @@ android:fadingEdge="vertical">
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/EditText5"
-        android:layout_below="@id/open1" />
+        android:layout_below="@id/open1"
+        android:textOff="仅自己可见"
+        android:textOn="所有人可见" />
     <TextView
         android:id="@+id/textView8"
         android:layout_width="100dp"
@@ -209,7 +215,9 @@ android:fadingEdge="vertical">
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/EditText6"
-        android:layout_below="@id/open2" />
+        android:layout_below="@id/open2"
+        android:textOff="仅自己可见"
+        android:textOn="所有人可见" />
     <TextView
         android:id="@+id/textView9"
         android:layout_width="100dp"
@@ -237,7 +245,9 @@ android:fadingEdge="vertical">
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/EditText7"
-        android:layout_below="@id/open3" />
+        android:layout_below="@id/open3"
+        android:textOff="仅自己可见"
+        android:textOn="所有人可见" />
 
     <TextView
         android:id="@+id/textView10"
@@ -266,7 +276,9 @@ android:fadingEdge="vertical">
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/EditText8"
-        android:layout_below="@id/open4" />
+        android:layout_below="@id/open4"
+        android:textOff="仅自己可见"
+        android:textOn="所有人可见" />
 
     <TextView
         android:id="@+id/textView11"
@@ -278,7 +290,6 @@ android:fadingEdge="vertical">
         android:text="专业"
         android:textSize="17dp"
         android:layout_below="@id/textView10"/>
-
     <TextView
         android:id="@+id/EditText9"
         android:layout_width="180dp"
@@ -296,7 +307,9 @@ android:fadingEdge="vertical">
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/EditText9"
-        android:layout_below="@id/open5" />
+        android:layout_below="@id/open5"
+        android:textOff="仅自己可见"
+        android:textOn="所有人可见" />
 </RelativeLayout>
     <Button
         android:id="@+id/button"
