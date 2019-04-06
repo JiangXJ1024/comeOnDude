@@ -83,18 +83,22 @@ public class RRegisterServlet extends HttpServlet {
         //获得数据库的连接对象
         Connection connection = DBManager.getConnection();
         PreparedStatement preparedStatement = null;
+        PreparedStatement preparedStatement0 = null;
         ResultSet resultSet = null;
 
         //生成SQL代码
         StringBuilder sqlStatement = new StringBuilder();
-        sqlStatement.append("INSERT INTO user(UserName,Password,NO,Name,Sex,Nation,Grade,Major,College,Information) VALUES(?,?,?,?,?,?,?,?)");
+        sqlStatement.append("INSERT INTO user(UserName,Password,Photo,Information,NO,Name,Sex,Nation,Grade,Major,College,NoShow) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)");
 
         try (PrintWriter out = response.getWriter()) {
             Map<String, String> params = new HashMap<>();
             JSONObject jsonObject = new JSONObject();
+//            String No = request.getParameter("NO").trim();
+//            if(No.equals("保密")){
+//                
+//            }
             int no = Integer.parseInt(request.getParameter("NO").trim());
-//            int num = Integer.parseInt(request.getParameter("Number").trim());
-//            int type = Integer.parseInt(request.getParameter("Type").trim());
+            int photo = Integer.parseInt(request.getParameter("Photo").trim());
             String userName = request.getParameter("UserName").trim();
             String password = request.getParameter("Password").trim();
             String sex = request.getParameter("Sex").trim();
@@ -104,29 +108,47 @@ public class RRegisterServlet extends HttpServlet {
             String major = request.getParameter("Major").trim();
             String college = request.getParameter("College").trim();
             String information = request.getParameter("Information").trim();
+            String noShow = request.getParameter("NOSHOW").trim();
+            
+//            int no = 180400204;
+//            int photo = 1;
+//            String userName = "嘿嘿";
+//            String password = "Password";
+//            String sex = "Sex";
+//            String name = "Name";
+//            String nation ="Nation";
+//            String grade = "Grade";
+//            String major = "Major";
+//            String college = "College";
+//            String information = "Information";
             
             try {
                 preparedStatement = connection.prepareStatement(sqlStatement.toString());
                 preparedStatement.setString(1, userName);
                 preparedStatement.setString(2, password);
-                preparedStatement.setInt(3, no);
-                preparedStatement.setString(4, name);
-                preparedStatement.setString(5, sex);
-                preparedStatement.setString(6, nation);
-                preparedStatement.setString(7, grade);
-                preparedStatement.setString(8, major);
-                preparedStatement.setString(9, college);
-                preparedStatement.setString(10, information);
-                //preparedStatement.setString(8, major);
+                preparedStatement.setInt(3, photo);
+                preparedStatement.setString(4, information);
+                preparedStatement.setInt(5, no);
+                preparedStatement.setString(6, name);
+                preparedStatement.setString(7, sex);
+                preparedStatement.setString(8, nation);
+                preparedStatement.setString(9, grade);
+                preparedStatement.setString(10, major);
+                preparedStatement.setString(11, college);
+                preparedStatement.setString(12, noShow);
                 int colnum = preparedStatement.executeUpdate();
                 //更新State
                 StringBuilder sqlStatement0 = new StringBuilder();
                 sqlStatement0.append("UPDATE allstudent set State = 1 WHERE No=? ");
-                preparedStatement = connection.prepareStatement(sqlStatement0.toString());
-                preparedStatement.setInt(1, no);
-                int colnum0 = preparedStatement.executeUpdate();
-                jsonObject.put("colnum0", String.valueOf(colnum0));
-                jsonObject.put("colnum", String.valueOf(colnum));
+                preparedStatement0 = connection.prepareStatement(sqlStatement0.toString());
+                preparedStatement0.setInt(1, no);
+                int colnum0 = preparedStatement0.executeUpdate();
+                if(colnum0==1 && colnum==1){
+                    params.put("Result", "success");
+                }else{
+                    params.put("Result", "Fature");
+                }
+                jsonObject.put("params3", params);
                 out.write(jsonObject.toString());
             }catch (SQLException ex) {
             Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);

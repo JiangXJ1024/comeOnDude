@@ -38,7 +38,7 @@ public class UserDAO {
         //设置数据库的字段值
         try {
             preparedStatement = connection.prepareStatement(sqlStatement.toString());
-            preparedStatement.setString(1, No);
+            preparedStatement.setInt(1, Integer.parseInt(No));
             
             resultSet = preparedStatement.executeQuery();
             User user = new User();
