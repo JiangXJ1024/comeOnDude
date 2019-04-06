@@ -1,4 +1,0 @@
-#Wed Apr 03 16:53:55 CST 2019
-base.0=E\:\\comeDude\\MyCome0\\MyCome0\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex

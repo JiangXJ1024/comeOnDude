@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Mon Apr 01 21:59:58 CST 2019
-0.baseType=DIRECTORY
-0.base=E\:\\comeDude\\MyCome0\\MyCome0\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-0.path=classes.dex
-0.set=DEX
-count=1
