@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LWActivity"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+        <RadioButton
+            android:id="@+id/rb_10"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="全部动态"
+            android:button="@null"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:checked="true"
+            android:background="@drawable/bg_radio_1" />
+        <RadioButton
+            android:id="@+id/rb_11"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="待接单"
+            android:button="@null"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bg_radio_1"
+            android:textSize="18dp" />
+        <RadioButton
+            android:id="@+id/rb_12"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="待完成"
+            android:button="@null"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bg_radio_1" />
+        <RadioButton
+            android:id="@+id/rb_8"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="已完成"
+            android:button="@null"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bg_radio_1"
+            android:textSize="18dp" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#898989" />
+    <ListView
+        android:id="@+id/List4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

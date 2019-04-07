@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="129dp"
+    android:layout_marginLeft="129dp"
+    android:layout_marginTop="40dp"
+    android:text="账号激活"
+    android:textSize="30sp"
+    android:textStyle="bold" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:text="所在院校"
+        android:textSize="17dp"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@id/textView2">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textView2"
+        android:text="学号"
+        android:textSize="17dp"/>
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:textSize="17dp"
+        android:layout_toRightOf="@id/textView3"
+        android:layout_below="@id/spinner1"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textView3"
+        android:text="姓名"
+        android:textSize="17dp"/>
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:textSize="17dp"
+        android:layout_toRightOf="@id/textView4"
+        android:layout_below="@id/editText1"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textView4"
+        android:text="身份证号"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/textView5"
+        android:ems="10"
+        android:hint="仅用于身份核验"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:typeface="sans" />
+</RelativeLayout>
+<Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="50dp"
+    android:text="验证信息"
+    android:textSize="18dp"
+    android:onClick="Click2" />
+
+</LinearLayout>

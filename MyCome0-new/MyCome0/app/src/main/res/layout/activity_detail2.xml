@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail2Activity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/head_image000"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:background="#000"
+                android:onClick="Click18"/>
+            <TextView
+                android:id="@+id/tv_title003"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="0dp"
+                android:text="HELLO"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_toRightOf="@id/head_image000"
+                android:onClick="Click20"/>
+
+            <TextView
+                android:id="@+id/time_title001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:text="发布时间"
+                android:textSize="16dp"
+                android:textColor="#BBBBBB"
+                android:layout_toRightOf="@id/head_image000"
+                android:layout_below="@+id/tv_title003"/>
+            <TextView
+                android:id="@+id/time001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:text="2019-3-3"
+                android:textSize="16dp"
+                android:textColor="#BBBBBB"
+                android:layout_toRightOf="@id/time_title001"
+                android:layout_below="@+id/tv_title003"/>
+            <TextView
+                android:id="@+id/time_title002"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:text="活动时间"
+                android:textSize="16dp"
+                android:textColor="#BBBBBB"
+                android:layout_below="@id/time_title001"
+                android:layout_toRightOf="@id/head_image000" />
+            <TextView
+                android:id="@+id/time002"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:text="2019-3-4"
+                android:textSize="16dp"
+                android:textColor="#BBBBBB"
+                android:layout_toRightOf="@id/time_title002"
+                android:layout_below="@+id/time001"/>
+
+
+            <TextView
+                android:id="@+id/tv_content003"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="这里是内容这里是内容这里这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容"
+                android:textSize="17dp"
+                android:textColor="#6F6F6F"
+                android:layout_below="@id/time002"
+                android:layout_toRightOf="@id/head_image000"/>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/button01"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="私聊"
+            android:textSize="18dp"
+            android:onClick="Click17"
+            android:background="@drawable/bg_1"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="输入你想要的关键字"
+            android:textSize="18dp"
+            android:paddingLeft="15dp"/>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="查找"
+            android:textSize="18dp"
+            android:layout_toRightOf="@id/editText1"
+            android:background="@drawable/bg_1"
+            android:onClick="Click21"/>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:text="刷新"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/button3"
+            android:background="@drawable/bg_1"
+            android:onClick="Click22"/>
+        <RadioGroup
+            android:id="@+id/rg_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_0"
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="全部"
+                android:button="@null"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:checked="true"
+                android:background="@drawable/bg_radio_1" />
+            <RadioButton
+                android:id="@+id/rb_5"
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="约吃饭"
+                android:button="@null"
+                android:textSize="16sp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bg_radio_1" />
+            <RadioButton
+                android:id="@+id/rb_6"
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="约自习"
+                android:button="@null"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bg_radio_1"
+                android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/rb_7"
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="约运动"
+                android:button="@null"
+                android:textSize="16sp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bg_radio_1" />
+            <RadioButton
+                android:id="@+id/rb_8"
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="约其他"
+                android:button="@null"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bg_radio_1"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#898989" />
+    <ListView
+        android:id="@+id/List1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </ListView>
+
+</LinearLayout>

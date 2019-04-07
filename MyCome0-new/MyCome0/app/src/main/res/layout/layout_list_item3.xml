@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/head_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:background="#000"/>
+    <TextView
+        android:id="@+id/tv_title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="0dp"
+        android:text="HELLO"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/head_image"/>
+
+    <TextView
+        android:id="@+id/time_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="80dp"
+        android:text="发布时间"
+        android:textSize="16dp"
+        android:textColor="#BBBBBB"
+        android:layout_toRightOf="@id/tv_title3" />
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="2019-3-3"
+        android:textSize="16dp"
+        android:textColor="#BBBBBB"
+        android:layout_toRightOf="@id/time_title1" />
+    <TextView
+        android:id="@+id/time_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:text="活动时间"
+        android:textSize="16dp"
+        android:textColor="#BBBBBB"
+        android:layout_below="@id/tv_title3"
+        android:layout_toRightOf="@id/head_image" />
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="2019-3-4"
+        android:textSize="16dp"
+        android:textColor="#BBBBBB"
+        android:layout_toRightOf="@id/time_title2"
+        android:layout_below="@id/tv_title3"/>
+
+
+        <TextView
+            android:id="@+id/tv_content3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:maxLines="5"
+            android:ellipsize="end"
+            android:text="这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容"
+            android:textSize="17dp"
+            android:textColor="#6F6F6F"
+            android:layout_below="@id/time2"
+            android:layout_toRightOf="@id/head_image"/>
+
+
+</RelativeLayout>
