@@ -82,23 +82,23 @@ public class SaveMessageServlet extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
 
             //获得请求中传来的信息
-            int fno = Integer.parseInt(request.getParameter("FNO").trim());
-            int num = Integer.parseInt(request.getParameter("Number").trim());
-            int type = Integer.parseInt(request.getParameter("Type").trim());
-            String  releasetime = request.getParameter("ReleaseTime").trim();
-            String  starttime = request.getParameter("StartTime").trim();
-            String  endtime = request.getParameter("EndTime").trim();
-            String content = request.getParameter("Content").trim();
-            SimpleDateFormat nowTime = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-//            long now=System.currentTimeMillis();
-//            String time = nowTime.format(now);
-//            int fno = 180400202;
-//            int num = 1;
-//            int type = 1;
-//            String releasetime = time;
-//            String starttime = time;
-//            String endtime = time;
-//            String content = time;
+//            int fno = Integer.parseInt(request.getParameter("FNO").trim());
+//            int num = Integer.parseInt(request.getParameter("Number").trim());
+//            int type = Integer.parseInt(request.getParameter("Type").trim());
+//            String  releasetime = request.getParameter("ReleaseTime").trim();
+////            String  starttime = request.getParameter("StartTime").trim();
+//            String  endtime = request.getParameter("EndTime").trim();
+//            String content = request.getParameter("Content").trim();
+            SimpleDateFormat nowTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            long now=System.currentTimeMillis();
+            String time = nowTime.format(now);
+            int fno = 180400202;
+            int num = 1;
+            int type = 1;
+            String releasetime = time;
+            String starttime = time;
+            String endtime = time;
+            String content = time;
 
             //信息存储结果反馈
             Boolean verifyResult = UserDAO.ReleaseMessage(fno,num,type,releasetime,starttime,endtime,content);

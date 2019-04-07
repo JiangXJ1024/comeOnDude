@@ -3,12 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/E:/comeDude/comeOnDude/JavaWebTest/WebApplication1/src/java/net/dude/TypeServlet.java</file>
             <file>file:/E:/comeDude/comeOnDude/JavaWebTest/WebApplication1/src/java/net/dude/RRegisterServlet.java</file>
             <file>file:/E:/comeDude/comeOnDude/JavaWebTest/WebApplication1/src/java/net/dude/SaveMessageServlet.java</file>
+            <file>file:/E:/comeDude/comeOnDude/JavaWebTest/WebApplication1/src/java/net/dude/ReleaseServlet.java</file>
             <file>file:/E:/comeDude/comeOnDude/JavaWebTest/WebApplication1/src/java/net/dude/RegisterServlet.java</file>
             <file>file:/E:/comeDude/comeOnDude/JavaWebTest/WebApplication1/src/java/net/dude/UserDAO.java</file>
             <file>file:/E:/comeDude/comeOnDude/JavaWebTest/WebApplication1/src/java/net/dude/LoginServlet.java</file>
+            <file>file:/E:/comeDude/comeOnDude/JavaWebTest/WebApplication1/src/java/net/dude/Allmessage.java</file>
             <file>file:/E:/comeDude/comeOnDude/JavaWebTest/WebApplication1/src/java/net/dude/ServerListener.java</file>
+            <file>file:/E:/comeDude/comeOnDude/JavaWebTest/WebApplication1/src/java/net/dude/User.java</file>
         </group>
     </open-files>
 </project-private>

@@ -43,8 +43,21 @@ public class UserDAO {
             resultSet = preparedStatement.executeQuery();
             User user = new User();
             if (resultSet.next()) {
-                user.setUserName(resultSet.getString("No"));
+//                user.setUserName(resultSet.getString("No"));
                 user.setPassword(resultSet.getString("Password"));
+                user.initUser(resultSet.getString("Sex"),
+                            resultSet.getString("Nation"),
+                            resultSet.getString("Grade") , 
+                            resultSet.getString("Major"));
+                user.setBasicInformation(resultSet.getString("College"),
+                        resultSet.getString( "Name"), 
+                        resultSet.getInt("No"));
+                user.setUserInformation(resultSet.getString("UserName"),
+                            resultSet.getString("Password"),
+                            resultSet.getString("Information") , 
+                            resultSet.getInt("Photo"));
+                user.setNoShow(resultSet.getString("NoShow"));
+                
                 return user;
             } else {
                 return null;

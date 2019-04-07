@@ -86,7 +86,10 @@ public class LoginServlet extends HttpServlet {
             String password = request.getParameter("Password").trim();
 
             //密码验证结果
-            Boolean verifyResult = verifyLogin(accountNumber, password);
+            //查询用户
+            User result = UserDAO.queryUser(accountNumber);
+            //账户密码验证
+            Boolean verifyResult=(null != result && password.equals(result.getPassword())) ;
 
             Map<String, String> params = new HashMap<>();
             JSONObject jsonObject = new JSONObject();
@@ -94,9 +97,29 @@ public class LoginServlet extends HttpServlet {
 
             if (verifyResult) {
                 params.put("Result", "success");
+                params.put("Sex", result.getSex());
+                params.put("Nation", result.getNation());
+                params.put("Grade", result.getGrade());
+                params.put("Major", result.getMajor());
+                params.put("College", result.getCollege());
+                params.put("Name", result.getName());
+                params.put("Information", result.getInformation());
+                params.put("Photo", String.valueOf(result.getPhoto()));
+                params.put("NoShow", result.getNoShow());
+                params.put("UserName", result.getUserName());
             } else {
                 params.put("Result", "failed");
             }
+//            int state = result.getState();
+//            params.put("Result", String.valueOf(state));
+//            if(state == 0)
+//            {
+//                params.put("Sex", result.getSex());
+//                params.put("Nation", result.getNation());
+//                params.put("Grade", result.getGrade());
+//                params.put("Major", result.getMajor());
+//            }
+            jsonObject.put("params2", params);
 
             jsonObject.put("params", params);
             out.write(jsonObject.toString());

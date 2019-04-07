@@ -24,6 +24,10 @@
         <servlet-name>RRegisterServlet</servlet-name>
         <servlet-class>net.dude.RRegisterServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>TypeServlet</servlet-name>
+        <servlet-class>net.dude.TypeServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>RRegisterServlet</servlet-name>
         <url-pattern>/RRegisterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TypeServlet</servlet-name>
+        <url-pattern>/TypeServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

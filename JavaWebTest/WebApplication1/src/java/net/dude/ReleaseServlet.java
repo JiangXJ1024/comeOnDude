@@ -93,6 +93,7 @@ public class ReleaseServlet extends HttpServlet {
         //生成SQL代码
         StringBuilder sqlStatement = new StringBuilder();
         sqlStatement.append("SELECT * FROM all_come WHERE State =?");
+        
         try (PrintWriter out = response.getWriter()) {
             Map<String, String> params = new HashMap<>();
             JSONObject jsonObject = new JSONObject();
@@ -112,6 +113,7 @@ public class ReleaseServlet extends HttpServlet {
 //                    allmes.setContent(resultSet.getString("Content"));
 //                    allmes.setStarttime(resultSet.getString("StartTime"));
 //                    allmes.setEndtime(resultSet.getString("EndTime"));
+                    params.put("Result", "success");
                     params.put("FirstNo",String.valueOf(resultSet.getInt("FirstNo")));
                     params.put("Number",String.valueOf(resultSet.getInt("Number")));
                     params.put("FinalNo",String.valueOf(resultSet.getInt("FinalNo")));
@@ -126,6 +128,9 @@ public class ReleaseServlet extends HttpServlet {
                     jsonObject.put("params"+String.valueOf(i), params);
                     
                 } 
+                i++;
+                params.put("Result", "failure");
+                jsonObject.put("params"+String.valueOf(i), params);
                 out.write(jsonObject.toString());
             }catch (SQLException ex) {
             Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);

@@ -16,6 +16,8 @@ public class User {
     private String password;
     //头像
     private int photo;
+    //学号
+    private int no;
     //真实姓名
     private String name;
     //性别
@@ -34,6 +36,8 @@ public class User {
     private String information;
     //身份验证状态
     private int state;
+    //对外显示
+    private String noShow;
 
     public String getUserName() {
         return userName;
@@ -58,6 +62,22 @@ public class User {
         grade = ggrade;
         major = mmajor;
     }
+    public void setBasicInformation(String College, String Name, int No){
+        college = College;
+        name = Name;
+        no =No;
+    }
+
+    public void setUserInformation(String UserName, String Password,String Information, int Photo) {
+        userName = UserName;
+        password = Password;
+        information = Information;
+        photo = Photo;
+    }
+
+    public void setNoShow(String noShow) {
+        this.noShow = noShow;
+    }
     
     public void setState(int s) {
         state = s;
@@ -81,4 +101,25 @@ public class User {
     public String getMajor() {
         return major;
     }
+
+    public String getCollege() {
+        return college;
+    }
+
+    public String getInformation() {
+        return information;
+    }
+
+    public String getNoShow() {
+        return noShow;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getPhoto() {
+        return photo;
+    }
+    
 }
